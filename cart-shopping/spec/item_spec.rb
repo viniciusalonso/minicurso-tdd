@@ -18,4 +18,10 @@ describe Item do
       expect(item.quantity).to eq(3)
     end
   end
+
+  describe "#total_value" do
+    it 'item value is 31.50' do
+      expect(item.total_value).to eq(31.50)
+    end
+  end
 end
