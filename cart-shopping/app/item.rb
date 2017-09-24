@@ -1,11 +1,11 @@
 class Item
-  attr_reader :product, :quantity
+  attr_reader :product, :quantity, :price_on_day
 
   def initialize params
-    @product, @quantity = params[:product], params[:quantity]
+    @product, @quantity, @price_on_day = params[:product], params[:quantity], params[:price_on_day]
   end
 
   def total_value
-    @product.price * @quantity
+    @price_on_day * @quantity
   end
 end
